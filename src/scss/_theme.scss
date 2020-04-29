@@ -1,0 +1,57 @@
+/*------------------------------------------------ 
+    Theme 
+------------------------------------------------*/
+
+/* Dark Mode */
+.theme-mode--dark {
+    background-color: $very-dark-blue-bg;
+    color: $white;
+    transition: all 600ms;
+}
+
+.theme-mode--dark .bg-pattern {
+    background-color: $very-dark-blue-top-bg-pattern;
+    transition: all 600ms;
+}
+
+.theme-mode--dark .top-card,
+.theme-mode--dark .bottom-card {
+    background-color: $dark-desaturated-blue-card-bg;
+    transition: all 600ms;
+}
+
+.theme-mode--dark .headings__subheader,
+.theme-mode--dark .toggle-mode-wrapper__label,
+.theme-mode--dark .top-card__social-text,
+.theme-mode--dark .top-card__data-stats span,
+.theme-mode--dark .bottom-card__social-text {
+    color: $desaturated-blue-text;
+    transition: all 600ms;
+}
+
+/* Light Mode */
+.theme-mode--light {
+    background-color: $white;
+    color: $very-dark-blue-text;
+    transition: all 600ms;
+}
+
+.theme-mode--light .bg-pattern {
+    background-color: $very-pale-blue-top-bg-pattern;
+    transition: all 600ms;
+}
+
+.theme-mode--light .top-card,
+.theme-mode--light .bottom-card {
+    background-color: $light-grayish-blue-card-bg;
+    transition: all 600ms;
+}
+
+.theme-mode--light .headings__subheader,
+.theme-mode--light .toggle-mode-wrapper__label,
+.theme-mode--light .top-card__social-text,
+.theme-mode--light .top-card__data-stats span,
+.theme-mode--light .bottom-card__social-text {
+    color: $dark-grayish-blue-text;
+    transition: all 600ms;
+}

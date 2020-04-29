@@ -2,86 +2,168 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   
-  <title>Frontend Mentor | [Challenge Name Here]</title>
+  <title>Frontend Mentor | Social media dashboard with theme switcher</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/css/styles.css"> 
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
 </head>
-<body>
-
-  Social Media Dashboard
-  Total Followers: 23,004
-
-  Dark Mode
-
-  
-
-  @nathanf
-  1987
-  Followers
-  12 Today
-
-  @nathanf
-  1044
-  Followers
-  99 Today
-
-  @realnathanf
-  11k
-  Followers
-  1099 Today
-
-  Nathan F.
-  8239
-  Subscribers
-  144 Today
-
-
-
-  Overview - Today
-
-  Page Views
-  87
-  3%
-
-  Likes
-  52
-  2%
-
-  Likes
-  5462
-  2257%
-
-  Profile Views
-  52k
-  1375%
-
-  Retweets
-  117
-  303%
-
-  Likes
-  507
-  553%
-
-  Likes
-  107
-  19%
-
-  Total Views
-  1407
-  12%
-  
+<body class="them-mode theme-mode--light">
+<div class="bg-pattern"></div>
+<header class="header-section">
+  <div class="headings">
+    <h1 class="headings__title">Social Media Dashboard</h1>
+    <p class="headings__subheader">Total Followers: 23,004</p>
+  </div>
+  <div class="toggle-mode-wrapper">
+    <label class="toggle-mode" for="toggle-mode">
+      <div class="toggle-mode__label">Dark Mode</div>
+      <div class="toggle">
+        <input type="checkbox" name="check" value="check" id="toggle-mode" class="toggle-state" />
+        <div class="toggle-inner">
+          <div class="toggle-inner-indicator"></div>        
+        </div>
+        <div class="toggle-active-bg"></div>
+      </div>
+    </label>
+  </div>
+</header>
+<main class="main-section">
+  <section class="top-grid">
+    <div class="top-card">
+      <div class="top-card__social">
+        <img src="/images/icon-facebook.svg" alt="Facebook" class="top-card__social-icon">
+        <div class="top-card__social-text">@nathanf</div>        
+      </div>
+      <div class="top-card__data">
+        <div class="top-card__data-stats">1987<span>Followers</span></div>
+        <div class="top-card__data-metrics--up"><i class="arrow"></i>12 Today</div>
+      </div>
+    </div>
+    <div class="top-card">
+      <div class="top-card__social">
+        <img src="/images/icon-twitter.svg" alt="Twitter" class="top-card__social-icon">
+        <div class="top-card__social-text">@nathanf</div>        
+      </div>
+      <div class="top-card__data">
+        <div class="top-card__data-stats">1044<span>Followers</span></div>
+        <div class="top-card__data-metrics--up"><i class="arrow"></i>99 Today</div>
+      </div>
+    </div>
+    <div class="top-card">
+      <div class="top-card__social">
+        <img src="/images/icon-instagram.svg" alt="Instagram" class="top-card__social-icon">
+        <div class="top-card__social-text">@realnathanf</div>        
+      </div>
+      <div class="top-card__data">
+        <div class="top-card__data-stats">11k<span>Followers</span></div>
+        <div class="top-card__data-metrics--up"><i class="arrow"></i>1099 Today</div>
+      </div>
+    </div>
+    <div class="top-card">
+      <div class="top-card__social">
+        <img src="/images/icon-youtube.svg" alt="YouTube" class="top-card__social-icon">
+        <div class="top-card__social-text">Nathan F.</div>        
+      </div>
+      <div class="top-card__data">
+        <div class="top-card__data-stats">8239<span>Subscribers</span></div>
+        <div class="top-card__data-metrics--down"><i class="arrow"></i>144 Today</div>
+      </div>
+    </div>
+  </section>
+  <h2 class="bottom-grid__header">Overview - Today</h2>
+  <section class="bottom-grid">
+    <div class="bottom-card">
+      <div class="bottom-card__social">
+        <img src="/images/icon-facebook.svg" alt="Facebook" class="bottom-card__social-icon">
+        <div class="bottom-card__social-text">Page Views</div>        
+      </div>
+      <div class="bottom-card__data">
+        <div class="bottom-card__data-stats">87</div>
+        <div class="bottom-card__data-metrics--up"><i class="arrow"></i>3%</div>
+      </div>
+    </div>
+    <div class="bottom-card">
+      <div class="bottom-card__social">
+        <img src="/images/icon-facebook.svg" alt="Facebook" class="bottom-card__social-icon">
+        <div class="bottom-card__social-text">Likes</div>        
+      </div>
+      <div class="bottom-card__data">
+        <div class="bottom-card__data-stats">52</div>
+        <div class="bottom-card__data-metrics--down"><i class="arrow"></i>2%</div>
+      </div>
+    </div>
+    <div class="bottom-card">
+      <div class="bottom-card__social">
+        <img src="/images/icon-instagram.svg" alt="Instagram" class="bottom-card__social-icon">
+        <div class="bottom-card__social-text">Likes</div>        
+      </div>
+      <div class="bottom-card__data">
+        <div class="bottom-card__data-stats">5462</div>
+        <div class="bottom-card__data-metrics--up"><i class="arrow"></i>2257%</div>
+      </div>
+    </div>
+    <div class="bottom-card">
+      <div class="bottom-card__social">
+        <img src="/images/icon-instagram.svg" alt="Instagram" class="bottom-card__social-icon">
+        <div class="bottom-card__social-text">Page Views</div>        
+      </div>
+      <div class="bottom-card__data">
+        <div class="bottom-card__data-stats">52k</div>
+        <div class="bottom-card__data-metrics--up"><i class="arrow"></i>1375%</div>
+      </div>
+    </div>
+    <div class="bottom-card">
+      <div class="bottom-card__social">
+        <img src="/images/icon-twitter.svg" alt="Twitter" class="bottom-card__social-icon">
+        <div class="bottom-card__social-text">Retweets</div>        
+      </div>
+      <div class="bottom-card__data">
+        <div class="bottom-card__data-stats">117</div>
+        <div class="bottom-card__data-metrics--up"><i class="arrow"></i>303%</div>
+      </div>
+    </div>
+    <div class="bottom-card">
+      <div class="bottom-card__social">
+        <img src="/images/icon-twitter.svg" alt="Twitter" class="bottom-card__social-icon">
+        <div class="bottom-card__social-text">Likes</div>        
+      </div>
+      <div class="bottom-card__data">
+        <div class="bottom-card__data-stats">507</div>
+        <div class="bottom-card__data-metrics--up"><i class="arrow"></i>553%</div>
+      </div>
+    </div>
+    <div class="bottom-card">
+      <div class="bottom-card__social">
+        <img src="/images/icon-youtube.svg" alt="YouTube" class="bottom-card__social-icon">
+        <div class="bottom-card__social-text">Likes</div>        
+      </div>
+      <div class="bottom-card__data">
+        <div class="bottom-card__data-stats">107</div>
+        <div class="bottom-card__data-metrics--down"><i class="arrow"></i>19%</div>
+      </div>
+    </div>
+    <div class="bottom-card">
+      <div class="bottom-card__social">
+        <img src="/images/icon-youtube.svg" alt="YouTube" class="bottom-card__social-icon">
+        <div class="bottom-card__social-text">Total Views</div>        
+      </div>
+      <div class="bottom-card__data">
+        <div class="bottom-card__data-stats">1407</div>
+        <div class="bottom-card__data-metrics--down"><i class="arrow"></i>12%</div>
+      </div>
+    </div>
+  </section>
+</main>
+<footer class="footer-section">
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
+    Coded by <a href="https://github.com/spais">Shawn Pais</a>.
   </div>
+</footer>
+<script src="/js/scripts.js"></script>
 </body>
 </html>

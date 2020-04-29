@@ -9,155 +9,161 @@
   <title>Frontend Mentor | Social media dashboard with theme switcher</title>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="/css/styles.css"> 
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
+
 </head>
-<body class="theme-mode--dark">
+<body class="them-mode theme-mode--light">
+<div class="bg-pattern"></div>
 <header class="header-section">
   <div class="headings">
     <h1 class="headings__title">Social Media Dashboard</h1>
     <p class="headings__subheader">Total Followers: 23,004</p>
   </div>
   <div class="toggle-mode-wrapper">
-    <label class="toggle-mode-wrapper__label">Dark Mode</label>
-    <input type="checkbox" class="toggle-mode-wrapper__button" />
+    <label class="toggle-mode" for="toggle-mode">
+      <div class="toggle-mode__label">Dark Mode</div>
+      <div class="toggle">
+        <input type="checkbox" name="check" value="check" id="toggle-mode" class="toggle-state" />
+        <div class="toggle-inner">
+          <div class="toggle-inner-indicator"></div>        
+        </div>
+        <div class="toggle-active-bg"></div>
+      </div>
+    </label>
   </div>
 </header>
 <main class="main-section">
-  <!-- Top Grid -->
   <section class="top-grid">
-    <div class="top-grid__card">
-      <div class="top-grid__card-social">
-        <img src="/images/icon-facebook.svg" alt="Facebook" class="card-social__icon">
-        <div class="card-social__text">@nathanf</div>        
+    <div class="top-card">
+      <div class="top-card__social">
+        <img src="/images/icon-facebook.svg" alt="Facebook" class="top-card__social-icon">
+        <div class="top-card__social-text">@nathanf</div>        
       </div>
-      <div class="top-grid__card-data">
-        <div class="top-grid__card-data-stats">1987<span>Followers</span></div>
-        <div class="top-grid__card-data-metrics--up">12 Today</div>
-      </div>
-    </div>
-    <div class="top-grid__card">
-      <div class="top-grid__card-social">
-        <img src="/images/icon-twitter.svg" alt="Twitter" class="card-social__icon">
-        <div class="card-social__text">@nathanf</div>        
-      </div>
-      <div class="top-grid__card-data">
-        <div class="top-grid__card-data-stats">1044<span>Followers</span></div>
-        <div class="top-grid__card-data-metrics--up">99 Today</div>
+      <div class="top-card__data">
+        <div class="top-card__data-stats">1987<span>Followers</span></div>
+        <div class="top-card__data-metrics--up"><i class="arrow"></i>12 Today</div>
       </div>
     </div>
-    <div class="top-grid__card">
-      <div class="top-grid__card-social">
-        <img src="/images/icon-instagram.svg" alt="Instagram" class="card-social__icon">
-        <div class="card-social__text">@realnathanf</div>        
+    <div class="top-card">
+      <div class="top-card__social">
+        <img src="/images/icon-twitter.svg" alt="Twitter" class="top-card__social-icon">
+        <div class="top-card__social-text">@nathanf</div>        
       </div>
-      <div class="top-grid__card-data">
-        <div class="top-grid__card-data-stats">11k<span>Followers/span></div>
-        <div class="top-grid__card-data-metrics--up">1099 Today</div>
+      <div class="top-card__data">
+        <div class="top-card__data-stats">1044<span>Followers</span></div>
+        <div class="top-card__data-metrics--up"><i class="arrow"></i>99 Today</div>
       </div>
     </div>
-    <div class="top-grid__card">
-      <div class="top-grid__card-social">
-        <img src="/images/icon-youtube.svg" alt="YouTube" class="card-social__icon">
-        <div class="card-social__text">Nathan F.</div>        
+    <div class="top-card">
+      <div class="top-card__social">
+        <img src="/images/icon-instagram.svg" alt="Instagram" class="top-card__social-icon">
+        <div class="top-card__social-text">@realnathanf</div>        
       </div>
-      <div class="top-grid__card-data">
-        <div class="top-grid__card-data-stats">8239<span>Subscribers</span></div>
-        <div class="top-grid__card-data-metrics--down">144 Today</div>
+      <div class="top-card__data">
+        <div class="top-card__data-stats">11k<span>Followers</span></div>
+        <div class="top-card__data-metrics--up"><i class="arrow"></i>1099 Today</div>
+      </div>
+    </div>
+    <div class="top-card">
+      <div class="top-card__social">
+        <img src="/images/icon-youtube.svg" alt="YouTube" class="top-card__social-icon">
+        <div class="top-card__social-text">Nathan F.</div>        
+      </div>
+      <div class="top-card__data">
+        <div class="top-card__data-stats">8239<span>Subscribers</span></div>
+        <div class="top-card__data-metrics--down"><i class="arrow"></i>144 Today</div>
       </div>
     </div>
   </section>
-  <!-- Bottom Grid -->
+  <h2 class="bottom-grid__header">Overview - Today</h2>
   <section class="bottom-grid">
-    <h2 class="bottom-grid__header">Overview - Today</h2>
-    <div class="bottom-grid__card">
-      <div class="bottom-grid__card-social">
-        <img src="/images/icon-facebook.svg" alt="Facebook" class="card-social__icon">
-        <div class="card-social__text">Page Views</div>        
+    <div class="bottom-card">
+      <div class="bottom-card__social">
+        <img src="/images/icon-facebook.svg" alt="Facebook" class="bottom-card__social-icon">
+        <div class="bottom-card__social-text">Page Views</div>        
       </div>
-      <div class="bottom-grid__card-data">
-        <div class="bottom-grid__card-data-stats">87</div>
-      </div>
-    </div>
-    <div class="bottom-grid__card">
-      <div class="bottom-grid__card-social">
-        <img src="/images/icon-facebook.svg" alt="Facebook" class="card-social__icon">
-        <div class="card-social__text">Likes</div>        
-      </div>
-      <div class="bottom-grid__card-data">
-        <div class="bottom-grid__card-data-stats">52</div>
-        <div class="bottom-grid__card-data-metrics--down">2%</div>
+      <div class="bottom-card__data">
+        <div class="bottom-card__data-stats">87</div>
+        <div class="bottom-card__data-metrics--up"><i class="arrow"></i>3%</div>
       </div>
     </div>
-    <div class="bottom-grid__card">
-      <div class="bottom-grid__card-social">
-        <img src="/images/icon-instagram.svg" alt="Instagram" class="card-social__icon">
-        <div class="card-social__text">Likes</div>        
+    <div class="bottom-card">
+      <div class="bottom-card__social">
+        <img src="/images/icon-facebook.svg" alt="Facebook" class="bottom-card__social-icon">
+        <div class="bottom-card__social-text">Likes</div>        
       </div>
-      <div class="bottom-grid__card-data">
-        <div class="bottom-grid__card-data-stats">5462</div>
-        <div class="bottom-grid__card-data-metrics--up">2257%</div>
-      </div>
-    </div>
-    <div class="bottom-grid__card">
-      <div class="bottom-grid__card-social">
-        <img src="/images/icon-instagram.svg" alt="Instagram" class="card-social__icon">
-        <div class="card-social__text">Page Views</div>        
-      </div>
-      <div class="bottom-grid__card-data">
-        <div class="bottom-grid__card-data-stats">52k</div>
-        <div class="bottom-grid__card-data-metrics--up">1375%</div>
+      <div class="bottom-card__data">
+        <div class="bottom-card__data-stats">52</div>
+        <div class="bottom-card__data-metrics--down"><i class="arrow"></i>2%</div>
       </div>
     </div>
-    <div class="bottom-grid__card">
-      <div class="bottom-grid__card-social">
-        <img src="/images/icon-twitter.svg" alt="Twitter" class="card-social__icon">
-        <div class="card-social__text">Retweets</div>        
+    <div class="bottom-card">
+      <div class="bottom-card__social">
+        <img src="/images/icon-instagram.svg" alt="Instagram" class="bottom-card__social-icon">
+        <div class="bottom-card__social-text">Likes</div>        
       </div>
-      <div class="bottom-grid__card-data">
-        <div class="bottom-grid__card-data-stats">117</div>
-        <div class="bottom-grid__card-data-metrics--up">303%</div>
-      </div>
-    </div>
-    <div class="bottom-grid__card">
-      <div class="bottom-grid__card-social">
-        <img src="/images/icon-twitter.svg" alt="Twitter" class="card-social__icon">
-        <div class="card-social__text">Likes</div>        
-      </div>
-      <div class="bottom-grid__card-data">
-        <div class="bottom-grid__card-data-stats">507</div>
-        <div class="bottom-grid__card-data-metrics--up">553%</div>
+      <div class="bottom-card__data">
+        <div class="bottom-card__data-stats">5462</div>
+        <div class="bottom-card__data-metrics--up"><i class="arrow"></i>2257%</div>
       </div>
     </div>
-    <div class="bottom-grid__card">
-      <div class="bottom-grid__card-social">
-        <img src="/images/icon-youtube.svg" alt="YouTube" class="card-social__icon">
-        <div class="card-social__text">Likes</div>        
+    <div class="bottom-card">
+      <div class="bottom-card__social">
+        <img src="/images/icon-instagram.svg" alt="Instagram" class="bottom-card__social-icon">
+        <div class="bottom-card__social-text">Page Views</div>        
       </div>
-      <div class="bottom-grid__card-data">
-        <div class="bottom-grid__card-data-stats">107</div>
-        <div class="bottom-grid__card-data-metrics--down">19%</div>
+      <div class="bottom-card__data">
+        <div class="bottom-card__data-stats">52k</div>
+        <div class="bottom-card__data-metrics--up"><i class="arrow"></i>1375%</div>
       </div>
     </div>
-    <div class="bottom-grid__card">
-      <div class="bottom-grid__card-social">
-        <img src="/images/icon-youtube.svg" alt="YouTube" class="card-social__icon">
-        <div class="card-social__text">Total Views</div>        
+    <div class="bottom-card">
+      <div class="bottom-card__social">
+        <img src="/images/icon-twitter.svg" alt="Twitter" class="bottom-card__social-icon">
+        <div class="bottom-card__social-text">Retweets</div>        
       </div>
-      <div class="bottom-grid__card-data">
-        <div class="bottom-grid__card-data-stats">1407</div>
-        <div class="bottom-grid__card-data-metrics--down">12%</div>
+      <div class="bottom-card__data">
+        <div class="bottom-card__data-stats">117</div>
+        <div class="bottom-card__data-metrics--up"><i class="arrow"></i>303%</div>
+      </div>
+    </div>
+    <div class="bottom-card">
+      <div class="bottom-card__social">
+        <img src="/images/icon-twitter.svg" alt="Twitter" class="bottom-card__social-icon">
+        <div class="bottom-card__social-text">Likes</div>        
+      </div>
+      <div class="bottom-card__data">
+        <div class="bottom-card__data-stats">507</div>
+        <div class="bottom-card__data-metrics--up"><i class="arrow"></i>553%</div>
+      </div>
+    </div>
+    <div class="bottom-card">
+      <div class="bottom-card__social">
+        <img src="/images/icon-youtube.svg" alt="YouTube" class="bottom-card__social-icon">
+        <div class="bottom-card__social-text">Likes</div>        
+      </div>
+      <div class="bottom-card__data">
+        <div class="bottom-card__data-stats">107</div>
+        <div class="bottom-card__data-metrics--down"><i class="arrow"></i>19%</div>
+      </div>
+    </div>
+    <div class="bottom-card">
+      <div class="bottom-card__social">
+        <img src="/images/icon-youtube.svg" alt="YouTube" class="bottom-card__social-icon">
+        <div class="bottom-card__social-text">Total Views</div>        
+      </div>
+      <div class="bottom-card__data">
+        <div class="bottom-card__data-stats">1407</div>
+        <div class="bottom-card__data-metrics--down"><i class="arrow"></i>12%</div>
       </div>
     </div>
   </section>
 </main>
-<footer>
+<footer class="footer-section">
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
+    Coded by <a href="https://github.com/spais">Shawn Pais</a>.
   </div>
 </footer>
+<script src="/js/scripts.js"></script>
 </body>
 </html>

@@ -1,0 +1,56 @@
+/*------------------------------------------------ 
+    Layout 
+------------------------------------------------*/
+
+.header-section {
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    padding: 3.2rem 2.4rem 0;
+    @media (min-width: $width-desktop) {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        position: relative;
+        @include max-width-desktop;
+        
+    }
+}
+
+.main-section {
+    width: 100vw;
+    padding: 3.2rem 2.4rem 0;
+    @media (min-width: $width-desktop) {
+        @include max-width-desktop;
+    }
+}
+
+.footer-section {
+    width: 100vw;
+    padding: 3.2rem 2.4rem;
+    @media (min-width: $width-desktop) {
+        @include max-width-desktop;
+    }
+}
+
+/* Grids */
+
+.top-grid {
+    @media (min-width: $width-desktop) {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: 1fr;
+        grid-column-gap: 2.4rem;
+    }
+}
+
+.bottom-grid {
+    margin-top: 2.4rem;
+    @media (min-width: $width-desktop) {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        grid-column-gap: 2.4rem;
+        grid-row-gap: 2.4rem;
+    }
+}
