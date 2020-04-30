@@ -76,7 +76,8 @@
     height: 24px;
     width: 48px;
     border-radius: 15px;
-    background: #d6d6d6;
+    background: hsl(210, 78%, 56%);
+    background: $toggle-button-dark;
     overflow: hidden;
     &-state {
         display: none;
@@ -105,7 +106,7 @@
         left: 0;
         height: 100%;
         width: 200%;
-        background: #003dda;
+        background: #d6d6d6;
         transform: translate3d(-100%, 0, 0);
         transition: transform 0.05s linear 0.17s;
     }
@@ -215,7 +216,7 @@
                 letter-spacing: 0.45ch;
             }
         }
-        &-metrics--up {
+        &-metrics-up {
             display: flex;
             justify-content: center;
             align-items: center;
@@ -232,7 +233,7 @@
                 background-repeat: no-repeat;
             }
         }
-        &-metrics--down {
+        &-metrics-down {
             display: flex;
             justify-content: center;
             align-items: center;
@@ -290,7 +291,7 @@
             font-weight: $font-bold;
             letter-spacing: -0.05ch;
         }
-        &-metrics--up {
+        &-metrics-up {
             display: flex;
             justify-content: center;
             align-items: center;
@@ -306,7 +307,7 @@
                 background-repeat: no-repeat;
             }
         }
-        &-metrics--down {
+        &-metrics-down {
             display: flex;
             justify-content: center;
             align-items: center;
