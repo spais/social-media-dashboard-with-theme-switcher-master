@@ -1,7 +1,7 @@
 const 
 
     // development mode?
-    devBuild = (process.env.NODE_ENV !== 'production'),
+    devBuild = (process.env.NODE_ENV === 'production'),
 
     // modules
     gulp = require('gulp'),
